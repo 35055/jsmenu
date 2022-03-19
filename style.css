@@ -103,6 +103,10 @@ ul a {
     top: 65px;
 }
 
+.menu-icon{
+    display: none;
+}
+
 .hidden-menu ul li a{
     font-size: 22px;
 }
@@ -134,6 +138,7 @@ ul a {
     }
 
     .menu-icon {
+        display: block;
         font-size: 40px;
         color: white;
         transition: 0.8s;
