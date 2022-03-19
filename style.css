@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "M";
+    z-index: 2;
+}
+
+
+h2 {
+    color: white;
+    font-size: 26px;
+    line-height: 26px;
+}
+
+.header__title {
+    color: white;
+    margin-top: 130px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    line-height: 51px;
+    text-align: center;
+}
+
+.header__text {
+    margin-bottom: 31px;
+    color: rgba(255, 255, 255, 0.63);
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+}
+
+header {
+    background: url(image/IMAGE.png) center /cover no-repeat;
+    padding: 20px 15px 290px 15px;
+
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+}
+
+ul a {
+    color: white;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.container {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__link {
+    background: #DD783F;
+    border-radius: 3px;
+    display: block;
+    padding: 12px 31px;
+    max-width: 195px;
+    width: 100%;
+    font-size: 13px;
+    line-height: 20px;
+    color: white;
+    margin: 0 auto;
+}
+
+.fon{
+    background-color: rgba(0, 0, 0, 0.63);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -1000px;
+    transition: 0.8s;
+}
+
+
+.hidden-menu {
+    position: absolute;
+    top: -350px;
+    right: 20px;
+    transition: 0.8s;
+}
+
+.hidden-menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    z-index: 999;
+    right: 30px;
+    top: 65px;
+}
+
+.hidden-menu ul li a{
+    font-size: 22px;
+}
+
+.menu-icon_exit {
+    font-size: 44px;
+    color: white;
+}
+
+@media (max-width:1320px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media (max-width:992px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (max-width:767px) {
+    .container {
+        max-width: none;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .menu-icon {
+        font-size: 40px;
+        color: white;
+        transition: 0.8s;
+        position: absolute;
+        top: 25px;
+        right: 17px;
+    }
+}
